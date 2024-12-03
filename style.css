@@ -1,0 +1,86 @@
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(167, 165, 162);
+}
+.slot {
+  width: 88%;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgb(199, 196, 192);
+  border-radius: 8px;
+}
+#slot-screen {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 98%;
+  margin: 1px 0;
+  background-color: rgb(235, 153, 61);
+}
+.reels {
+  width: 31%;
+  position: absolute;
+  padding: 0px;
+}
+.reels:nth-child(1){
+  left: 0;
+}
+.reels:nth-child(2){
+  left: 34.5%;
+}
+.reels:nth-child(3){
+  right: 0;
+}
+.reel img {
+  display: block;
+  margin: auto;
+  height: 240px;
+  max-width: 100%;
+}
+.stop-btn {
+  display: inline-block;
+  padding: 35px;
+  margin: 40px;
+  background-color: rgb(235, 153, 61);
+  border: solid 4px rgb(56, 54, 51);
+  border-radius: 60px;
+}
+.stop-btn:hover {
+  background-color: rgb(241, 4, 4);
+}
+
+/* creating the illusion of being pressed into the page. */
+.stop-btn:active {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+  border-bottom: none;
+}
+
+#start-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: rgba(0, 116, 10, 0.959);
+  border: solid 4px rgb(56, 54, 51);
+  font-size: 30px;
+  font-weight: bold;
+}
+#start-btn:hover {
+  background-color: rgba(15, 247, 35, 0.959);
+  cursor: pointer;
+}
+#start-btn:active {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+  /* border-bottom: none; */
+}
