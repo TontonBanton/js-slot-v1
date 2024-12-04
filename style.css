@@ -68,7 +68,7 @@ ul li {
   border-bottom: none;
 }
 
-#start-btn {
+#start-btn, #stop-btn {
   display: inline-block;
   padding: 20px 40px;
   background-color: rgba(0, 116, 10, 0.959);
