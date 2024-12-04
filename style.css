@@ -52,12 +52,13 @@ ul li {
   display: inline-block;
   padding: 35px;
   margin: 40px;
-  background-color: rgb(235, 153, 61);
+  background-color: rgb(187, 108, 18);
   border: solid 4px rgb(56, 54, 51);
   border-radius: 60px;
 }
 .stop-btn:hover {
   background-color: rgb(241, 4, 4);
+  /* cursor: pointer; */
 }
 
 /* creating the illusion of being pressed into the page. */
