@@ -2,21 +2,25 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-  background-color: rgb(167, 165, 162);
 }
 .slot {
-  width: 88%;
-  height: 400px;
-  overflow: hidden;
+  background-color: grey;
+  width: 90%;
+  height: 500px;
   margin: auto;
   margin-top: 40px;
-  background-color: rgb(199, 196, 192);
+  /* overflow: hidden; */
   border-radius: 8px;
 }
 #slot-screen {
-  height: 500px;
+  background-color: yellowgreen;
+  top: 10px;
+  width: 98%;
+  height: 480px;
+  margin: auto;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 ul {
   list-style: none;
@@ -29,18 +33,19 @@ ul li {
   background-color: rgb(235, 153, 61);
 }
 .reels {
+  background-color: red;
   width: 31%;
   position: absolute;
   padding: 0px;
 }
 .reels:nth-child(1){
-  left: 0;
+  left: 10px;
 }
 .reels:nth-child(2){
   left: 34.5%;
 }
 .reels:nth-child(3){
-  right: 0;
+  right: 10px;
 }
 .reel img {
   display: block;
