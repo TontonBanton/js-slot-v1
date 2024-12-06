@@ -6,21 +6,17 @@ body {
 .slot {
   background-color: grey;
   width: 90%;
-  height: 500px;
+  height: 400px;
   margin: auto;
   margin-top: 40px;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-radius: 8px;
 }
 #slot-screen {
   background-color: yellowgreen;
-  top: 10px;
-  width: 98%;
-  height: 480px;
-  margin: auto;
+  height: 500px;
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
 }
 ul {
   list-style: none;
