@@ -41,13 +41,12 @@ let slot = {
   resetLocationInfo: function() {
     slotFrameHeight = slot_screen.offsetHeight;           // Log the frame height (480)
     slotReeltemHeight = reel[0].offsetHeight;             // Log a single reel's height (244)
-    slotReelsHeight = reels[0].offsetHeight;              // Log the reels' height (2451) -244x10 plus margins/border
+    slotReelsHeight = reels[0].offsetHeight;              // Log the reels' height (2451) - (244x10 plus margins/border)
 
-    slotReelStartHeight = -slotReelsHeight;
-    console.log("Initial slotReelStartHeight (negative reels' height):", slotReelStartHeight);
-    slotReelStartHeight += slotFrameHeight - (slotFrameHeight / 2) + slotReeltemHeight * 3 / 2;
+    slotReelStartHeight = -slotReelsHeight;               // Move the whole reels directly above the 0 axis (-2145)
+    slotReelStartHeight += slotFrameHeight - (slotFrameHeight / 2) + ( slotReeltemHeight * 1.5);
     console.log("Final slotReelStartHeight (after adjustment):", slotReelStartHeight);
-
+    alert('isa isaha')
     for (let i = 0; i < reels.length; i++) {
         reels[i].style.top = String(slotReelStartHeight) + "px";
         console.log(`Reel ${i} style.top set to:`, reels[i].style.top);
